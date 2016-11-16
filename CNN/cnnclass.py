@@ -220,5 +220,6 @@ class ConvolutionalNeuralNetwork(object):
 		f.close()
 
 if __name__ == '__main__':
+	# data is narry
 	dataset = loadData()
 	cnn = ConvolutionalNeuralNetwork(dataset=dataset, learning_rate=0.03, filter_size = (5, 5), nkerns=(3, 5, 10), feature_length = 500, max_epoch = 20)
